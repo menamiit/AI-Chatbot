@@ -1,0 +1,113 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .bot-message {
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 1rem;
+    min-width: 250px;
+    max-width: 750px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .message-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .input-area input {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 9999px;
+    outline: none;
+  }
+  
+  .send-button {
+    margin-left: -3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Dark mode styles */
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark .bot-message {
+    background-color: #1e1e1e;
+  }
+  
+  body.dark .theme-toggle {
+    background-color: #333;
+  }
+  
+  body.dark .input-area input {
+    background-color: #1e1e1e;
+    color: white;
+    border-color: #444;
+  }
+  
